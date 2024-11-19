@@ -1,0 +1,13 @@
+sphinx>=5.0  # Ou <5.0 si vous souhaitez garder sphinx-book-theme 0.3.3
+sphinx-book-theme>=0.4.0  # Version mise à jour qui supporte Sphinx 5.0+
+sphinx-rtd-theme  # Si vous utilisez sphinx_rtd_theme à la place du book theme
+sphinx-autodoc-typehints
+matplotlib>=3.5.0
+ipython
+SALib>=1.3.13
+CoolProp>=6.4.1
+pymoo>=0.4.2.2
+tabulate>=0.8.9
+cryptography
+pymembrane>=0.0.3
+jinja2

@@ -1,0 +1,125 @@
+/* _static/custom.css */
+/* Ajustement de la taille de la police des titres */
+h1 {
+    font-size: 2em; /* Ajustez la taille du titre principal */
+}
+
+h2 {
+    font-size: 1.5em; /* Ajustez la taille du sous-titre */
+}
+
+h3 {
+    font-size: 1.25em; /* Ajustez la taille du sous-sous-titre */
+}
+
+h4 {
+    font-size: 1em; /* Ajustez la taille du titre de niveau 4 */
+}
+
+h5 {
+    font-size: 0.75em; /* Ajustez la taille du titre de niveau 5 */
+}
+
+h6 {
+    font-size: 0.5em; /* Ajustez la taille du titre de niveau 6 */
+}
+
+p {
+    line-height: 1.3; /* Ajustez cette valeur pour réduire l'interligne entre les paragraphes */
+    margin-top: 0;    /* Réduire la marge au-dessus des paragraphes */
+    margin-bottom: 0; /* Réduire la marge en dessous des paragraphes */
+}
+
+.custom-box {
+    padding: 15px;  /* Espace interne autour du contenu */
+    margin: 20px;   /* Espace externe autour du conteneur */
+    border: 1px solid #ddd;  /* Optionnel, ajoute une bordure pour mieux visualiser l'encadré */
+    border-radius: 5px;  /* Donne des bords arrondis */
+    background-color: #f9f9f9;  /* Fond légèrement gris */
+}
+
+/* Sélecteur plus spécifique pour écraser les règles de base */
+body .wy-nav-content-wrap {
+    margin-left: 40 !important;  /* Supprimer la marge à gauche */
+    margin-right: 20 !important;  /* Supprimer la marge à gauche */
+}
+
+body .wy-nav-content {
+    margin-left: 20px !important;  /* Ajustez cette valeur pour aligner le contenu correctement */
+    margin-right: 20px !important;  /* Ajustez cette valeur pour aligner le contenu correctement */
+    padding-left: 20px;  /* Vous pouvez ajuster cela également pour voir la différence */
+}
+
+.param-table th {
+    font-weight: bold;
+    text-align: left;
+    background-color: #f0f0f0;
+}
+
+.param-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.parameter-box {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.returns-box {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.type-badge {
+    display: inline-block;
+    background-color: #007ACC;
+    color: #ffffff;
+    padding: 1px 3px;
+    font-family: "Courier New", Courier, monospace;
+    border-radius: 2px;
+    font-size: 90%;
+    margin: 1px;
+}
+
+
+button.copy-button {
+    position: absolute;
+    top: 8px;                /* Ajustement de l'espacement depuis le haut */
+    right: 8px;              /* Ajustement de l'espacement depuis la droite */
+    background-color: rgba(0, 123, 255, 0.75);  /* Couleur avec transparence */
+    color: white;
+    border: none;
+    border-radius: 3px;      /* Angle arrondi léger */
+    padding: 4px 8px;        /* Moins de padding pour un bouton plus fin */
+    cursor: pointer;
+    font-size: 12px;         /* Police plus petite */
+    font-weight: 500;        /* Légèrement en gras pour une meilleure lisibilité */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition douce */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Légère ombre portée */
+    opacity: 0.85;           /* Transparence globale */
+}
+
+button.copy-button:hover {
+    background-color: rgba(0, 123, 255, 0.9);   /* Couleur plus visible au survol */
+    transform: scale(1.05);  /* Légère mise en avant au survol */
+}
+
+div.highlight {
+    position: relative;
+    padding-top: 10px;  /* Légèrement augmenter pour laisser de l'espace au bouton */
+}
+
+
+
+
+
+
+
+

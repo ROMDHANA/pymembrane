@@ -1,0 +1,79 @@
+# Ignorer tout le répertoire contenant les fichiers sources du package
+pymembrane/
+# Faire une exception pour le fichier __version__.py
+!pymembrane/__version__.py
+pymembrane.egg-info/
+
+# Ignorer les fichiers de construction
+build/
+dist/
+*.egg-info/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+.installed.cfg
+*.egg
+
+# Ignorer les fichiers compilés Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fichiers spécifiques à ignorer
+file_manager.py
+pymem.enc
+schema.json
+#setup.py
+publish_pymembrane.bat
+Y_FRV_1024.npy
+Y_R_1024.npy
+test.py
+test_sensi.py
+
+# Dossier spécifique à ignorer
+dwsim_/
+
+# Autres fichiers sensibles
+instructions.txt
+
+# Ignorer les fichiers générés par PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Pyre type checker
+.pyre/
+
+generate_figure.py
