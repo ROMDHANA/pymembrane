@@ -18,7 +18,7 @@ sphinx:
 
 commands:
   - pip list
-  - python -c "import pymembrane; print(pymembrane.__file__)"
+  - python -c "from pymembrane.membrane import membrane; print(membrane)"
 
 
 
