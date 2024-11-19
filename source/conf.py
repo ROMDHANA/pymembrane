@@ -5,10 +5,21 @@ Configuration file for the Sphinx documentation builder.
 import os  # Import os before using it
 import sys  # Import sys before using it
 
-# # Define the path to your project
-# sys.path.insert(0, os.path.abspath('../pymembrane'))
-# sys.path.insert(0, os.path.abspath('..'))
-# sys.path.insert(0, os.path.abspath('.'))
+
+# sys.path.insert lines to ensure the project path is set
+sys.path.insert(0, os.path.abspath('../pymembrane'))
+sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath('.'))
+
+# Mock dependencies that might not be present in the build environment
+autodoc_mock_imports = ["matplotlib", "numpy", "pandas", "IPython", "cryptography","scipy"]
+
+# Alternatively, only mock if the module isn't found
+try:
+    import pymembrane
+except ImportError:
+    autodoc_mock_imports.append("pymembrane")
+
 
 # # Log the paths being included
 # print("Python sys.path:", sys.path)
@@ -89,8 +100,7 @@ html_js_files = [
     'copy_button.js',
 ]
 
-# Mock dependencies that might not be present in the build environment
-autodoc_mock_imports = ["matplotlib", "numpy", "pandas", "IPython", "cryptography","pymembrane"]
+
 
 import matplotlib
 matplotlib.use('Agg')
