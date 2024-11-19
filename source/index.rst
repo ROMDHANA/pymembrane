@@ -22,7 +22,7 @@ This module is a Python library for modeling, simulating, and optimizing spiral 
 Elementary mass transfers in a spiral membrane
 ----------------------------------------------
 
-.. image:: _static/membrane.png
+.. image:: _static/membrane.svg
    :align: center
    :alt: Elementary mass transfers in a spiral membrane
    :width: 100%
