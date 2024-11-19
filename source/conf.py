@@ -21,7 +21,7 @@ author = 'Hedi Romdhana'
 # Lire la version directement depuis pymembrane.__version__
 try:
     from pymembrane import __version__
-    release = __version__
+    release = __version__.__version__
 except ImportError:
     release = "0.0.4"  # Version par défaut si pymembrane n'est pas accessible
 
