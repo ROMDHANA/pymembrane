@@ -113,7 +113,9 @@ html_js_files = [
 ]
 
 # Mock dependencies that might not be present in the build environment
-autodoc_mock_imports = ["matplotlib", "numpy", "pandas", "pymembrane","IPython","cryptography"]
+#autodoc_mock_imports = ["matplotlib", "numpy", "pandas", "pymembrane","IPython","cryptography"]
+autodoc_mock_imports = ["matplotlib", "numpy", "pandas", "IPython", "cryptography"]
+
 
 
 
@@ -121,6 +123,13 @@ import matplotlib
 matplotlib.use('Agg')
 
 plot_html_show_source_link=False
+
+
+# Adjust the path to make sure the module can be found
+sys.path.insert(0, os.path.abspath('..'))
+
+# If necessary, print the Python path for debugging
+print("Python sys.path:", sys.path)
 
 
 
