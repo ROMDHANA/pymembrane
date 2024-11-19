@@ -2,67 +2,19 @@
 pymembrane Documentation
 =========================================
 
-.. plot::
-   :caption: Exemple de graphique avec Matplotlib
-
-    from pymembrane.membrane import membrane
-    import matplotlib.pyplot as plt
-    
-
-    # Instantiate the spiral membrane object with key parameters
-    sm = membrane.spiral_membrane(
-        L=4.5,        # Length of the membrane in meters
-        DP=0.5,       # Pressure loss across the membrane in bar
-        S=118.5,      # Membrane area in m²
-        Pin=9.5,      # Inlet pressure in bar
-        Vin=10.0,     # Inlet volumetric flow rate in m³/h
-        T=25          # Inlet temperature in °C
-    )
-
-    # Specify the solutes present in the feed solution
-    sm.solutes = ['sucrose', 'fructose', 'lactic acid']
-
-    # Set the membrane mass transfer coefficients (B) for each solute
-    sm.B = [0.000144, 5.4e-05, 0.00027]  # in m/h
-
-    # Set the boundary layer mass transfer coefficients (k) for each solute
-    sm.k = [0.036, 0.0432, 0.0684]       # in m/h
-
-    # Set the inlet concentrations of each solute in the feed stream
-    sm.Cin = [0.1454, 2.4083, 3.5628]     # in mol/m³
-
-    # Calculate the spiral membrane process
-    sm.calcul()
-    import matplotlib.pyplot as plt
-
-    # Plot the retentate and permeate volume flowrate profiles along the membrane
-    plt.plot(sm.res.x[0:], sm.res.Vr[0:], label="Retentate")
-    plt.plot(sm.res.x[0:], sm.res.Vp[0:], label="Permeate")
-    plt.xlabel("Membrane position [m]", fontsize=14)
-    plt.ylabel("Volume flowrate [m³/h]", fontsize=14)
-    plt.grid()
-    plt.legend(fontsize=14)
-    plt.tight_layout()
-    plt.show()
-
-
-
 
 Welcome to the ``pymembrane`` documentation version |release|. 
 
 This module is a Python library for modeling, simulating, and optimizing spiral membrane-based processes.
 
-.. |version_badge| image:: https://img.shields.io/badge/version-0.0.1-blue.svg
-   :alt: Version Badge
-
 .. container:: important custom-box
-
 
    |version_badge|
 
    **Author**: Hedi Romdhana  
 
    **Email**: hedi.romdhana@agroparistech.fr
+
 
 .. contents::
     :local:

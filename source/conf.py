@@ -80,3 +80,11 @@ def type_role(name, rawtext, text, lineno, inliner, options=None, content=None):
     return [node], []
 
 roles.register_local_role('type', type_role)
+
+version_badge_url = f"https://img.shields.io/badge/version-{release}-blue.svg"
+
+rst_prolog = f"""
+.. |version_badge| image:: {version_badge_url}
+   :alt: Version Badge
+"""
+
