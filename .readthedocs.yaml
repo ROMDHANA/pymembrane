@@ -16,8 +16,7 @@ python:
 sphinx:
   configuration: source/conf.py
 
-commands:
-  - pip list
+
 
 
 
