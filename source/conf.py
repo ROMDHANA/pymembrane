@@ -2,25 +2,24 @@
 """
 Configuration file for the Sphinx documentation builder.
 """
-
 import os  # Import os before using it
 import sys  # Import sys before using it
 
-# Define the path to your project
-sys.path.insert(0, os.path.abspath('../pymembrane'))
-sys.path.insert(0, os.path.abspath('..'))
-sys.path.insert(0, os.path.abspath('.'))
+# # Define the path to your project
+# sys.path.insert(0, os.path.abspath('../pymembrane'))
+# sys.path.insert(0, os.path.abspath('..'))
+# sys.path.insert(0, os.path.abspath('.'))
 
-# Log the paths being included
-print("Python sys.path:", sys.path)
+# # Log the paths being included
+# print("Python sys.path:", sys.path)
 
-# Check if the 'pymembrane' directory exists
-pymembrane_path = os.path.abspath('../pymembrane')
-if os.path.exists(pymembrane_path):
-    print(f"Directory found: {pymembrane_path}")
-    print("Contents:", os.listdir(pymembrane_path))
-else:
-    print(f"Directory not found: {pymembrane_path}")
+# # Check if the 'pymembrane' directory exists
+# pymembrane_path = os.path.abspath('../pymembrane')
+# if os.path.exists(pymembrane_path):
+#     print(f"Directory found: {pymembrane_path}")
+#     print("Contents:", os.listdir(pymembrane_path))
+# else:
+#     print(f"Directory not found: {pymembrane_path}")
 
 # Project information
 project = 'pymembrane'
