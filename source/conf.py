@@ -90,7 +90,7 @@ html_js_files = [
 ]
 
 # Mock dependencies that might not be present in the build environment
-autodoc_mock_imports = ["matplotlib", "numpy", "pandas", "IPython", "cryptography"]
+autodoc_mock_imports = ["matplotlib", "numpy", "pandas", "IPython", "cryptography","pymembrane"]
 
 import matplotlib
 matplotlib.use('Agg')
