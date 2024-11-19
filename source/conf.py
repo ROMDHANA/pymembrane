@@ -4,10 +4,28 @@ Configuration file for the Sphinx documentation builder.
 """
 
 import os
-import sys
 
-# Définir le chemin vers le projet
 sys.path.insert(0, os.path.abspath('../pymembrane'))
+sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath('.'))
+
+# Log the paths being included
+print("Python sys.path:", sys.path)
+
+# Check if the 'pymembrane' directory exists
+pymembrane_path = os.path.abspath('../pymembrane')
+if os.path.exists(pymembrane_path):
+    print(f"Directory found: {pymembrane_path}")
+    print("Contents:", os.listdir(pymembrane_path))
+else:
+    print(f"Directory not found: {pymembrane_path}")
+
+
+# import os
+# import sys
+
+# # Définir le chemin vers le projet
+# sys.path.insert(0, os.path.abspath('../pymembrane'))
 
 # import os
 # import sys
@@ -125,11 +143,6 @@ matplotlib.use('Agg')
 plot_html_show_source_link=False
 
 
-# Adjust the path to make sure the module can be found
-sys.path.insert(0, os.path.abspath('..'))
-
-# If necessary, print the Python path for debugging
-print("Python sys.path:", sys.path)
 
 
 
