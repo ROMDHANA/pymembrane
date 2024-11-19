@@ -5,7 +5,7 @@ pymembrane Documentation
 
 Welcome to the ``pymembrane`` documentation version |release|. 
 
-This module is a Python library for modeling, simulating, and optimizing spiral membrane-based processes.
+This module is a Python library for modeling, simulating and optimizing spiral membrane-based processes.
 
 .. container:: important custom-box
 
@@ -35,8 +35,6 @@ The diagram above depicts the mass transfer phenomena taking place in a spiral m
 - **Mass boundary layer** (:math:`\delta`): A boundary layer forms in the retentate side due to the accumulation of solutes, generating a diffusive flux (:math:`\Phi_{\delta, j}`) directed away from the membrane.
 - **Membrane thickness** (:math:`\beta`): The thickness of the membrane (:math:`\beta`) represents resistance for the solutes, where diffusion of solutes happens from the retentate-membrane interface to the permeate-membrane interface.
 - **Transmembrane flux** (:math:`J_w`): Represents the water flux driven by **transmembrane pressure**. The presence of solutes creates **osmotic pressure** differences that influence this flux.
-
-
 
 
 Setup
