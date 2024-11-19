@@ -9,5 +9,5 @@ CoolProp>=6.4.1
 pymoo>=0.4.2.2
 tabulate>=0.8.9
 cryptography
-pymembrane>=0.0.3
+pymembrane>=0.0.4
 jinja2
