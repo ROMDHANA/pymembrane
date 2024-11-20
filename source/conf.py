@@ -107,3 +107,5 @@ html_css_files = [
 html_js_files = [
     'copy_button.js',  # Si un fichier JS personnalisé existe
 ]
+# https://app.readthedocs.org/projects/pymembrane/builds/26338086/
+#sphinx-book-theme>=0.4.0  # Theme Book

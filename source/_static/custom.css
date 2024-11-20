@@ -35,7 +35,7 @@ p {
     margin: 10px; /* Espace externe autour du conteneur */
     border: 1px solid #c0bfbf; /* Bordure discrète */
     border-radius: 4px; /* Coins arrondis */
-    background-color: #23f0ff4f; /* Couleur de fond légère */
+    background-color: hwb(180 89% 11% / 0.788); /* Couleur de fond légère */
     font-family: Arial, sans-serif; /* Police moderne */
     color: #333; /* Texte en couleur discrète */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
