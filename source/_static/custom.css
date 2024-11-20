@@ -31,12 +31,16 @@ p {
 }
 
 .custom-box {
-    padding: 15px;  /* Espace interne autour du contenu */
-    margin: 20px;   /* Espace externe autour du conteneur */
-    border: 1px solid #ddd;  /* Optionnel, ajoute une bordure pour mieux visualiser l'encadré */
-    border-radius: 5px;  /* Donne des bords arrondis */
-    background-color: #f9f9f9;  /* Fond légèrement gris */
+    padding: 10px; /* Espace interne autour du contenu */
+    margin: 10px; /* Espace externe autour du conteneur */
+    border: 1px solid #c0bfbf; /* Bordure discrète */
+    border-radius: 4px; /* Coins arrondis */
+    background-color: #23f0ff4f; /* Couleur de fond légère */
+    font-family: Arial, sans-serif; /* Police moderne */
+    color: #333; /* Texte en couleur discrète */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
 }
+
 
 /* Sélecteur plus spécifique pour écraser les règles de base */
 body .wy-nav-content-wrap {

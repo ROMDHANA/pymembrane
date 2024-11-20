@@ -3,17 +3,20 @@ pymembrane Documentation
 =========================================
 
 
-Welcome to the ``pymembrane`` documentation version |release|. 
+Welcome to the ``pymembrane`` documentation |version_badge|
 
 This module is a Python library for modeling, simulating and optimizing spiral membrane-based processes.
 
 .. container:: important custom-box
 
-   |version_badge|
-
    **Author**: |author|
 
    **Email**: |email|
+
+
+
+
+
 
 
 .. contents::

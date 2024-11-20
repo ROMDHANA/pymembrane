@@ -49,14 +49,7 @@ napoleon_numpy_docstring = True
 # Générer automatiquement des tableaux de résumé pour les classes et fonctions documentées
 autosummary_generate = True
 
-# Configurer le thème HTML
-html_theme = "sphinx_book_theme"
-html_css_files = [
-    'custom.css',  # Si un fichier CSS personnalisé existe
-]
-html_js_files = [
-    'copy_button.js',  # Si un fichier JS personnalisé existe
-]
+
 
 # Configuration Matplotlib pour les environnements sans interface graphique
 import matplotlib
@@ -91,11 +84,26 @@ rst_prolog = f"""
 
 .. |author| replace:: {author}
 .. |email| replace:: {email}
+
 """
 
+
+
+
 # Options pour la directive .. plot::
+plot_pre_code = "import matplotlib; matplotlib.use('svg')"
 plot_html_show_source_link = True   # Ajoute un lien "Show/Hide Code"
 plot_html_show_formats = True      # Permet de proposer le téléchargement des images dans différents formats
-plot_formats = [('png', 90), ('pdf', 90)]  # Les formats à générer (PNG et PDF)
+plot_formats = [('png', 90), ('pdf', 90),('svg'),]  # Les formats à générer (PNG et PDF)
 plot_include_source = False         # Inclut le code source mais le cache par défaut
 
+# Configurer le thème HTML
+#html_theme = "sphinx_book_theme"
+html_theme ="pydata_sphinx_theme"
+#html_theme = "sphinx_material"
+html_css_files = [
+    'custom.css',  # Si un fichier CSS personnalisé existe
+]
+html_js_files = [
+    'copy_button.js',  # Si un fichier JS personnalisé existe
+]
