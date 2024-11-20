@@ -61,7 +61,7 @@ html_js_files = [
 # Configuration Matplotlib pour les environnements sans interface graphique
 import matplotlib
 matplotlib.use('Agg')
-plot_html_show_source_link = False
+#plot_html_show_source_link = False
 
 # Doctest pour exécuter des blocs de code dans les docstrings
 import doctest
@@ -92,4 +92,10 @@ rst_prolog = f"""
 .. |author| replace:: {author}
 .. |email| replace:: {email}
 """
+
+# Options pour la directive .. plot::
+plot_html_show_source_link = True   # Ajoute un lien "Show/Hide Code"
+plot_html_show_formats = True      # Permet de proposer le téléchargement des images dans différents formats
+plot_formats = [('png', 90), ('pdf', 90)]  # Les formats à générer (PNG et PDF)
+plot_include_source = False         # Inclut le code source mais le cache par défaut
 
