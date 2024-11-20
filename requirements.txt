@@ -10,4 +10,4 @@ jinja2  # Pour le support de templates
 numpy>=1.21.0  # Ajouté : dépendance courante pour les calculs
 pandas>=1.3.0  # Ajouté : si requis par le projet
 scipy>=1.7.0  # Ajouté : dépendance scientifique courante
-
+pydata_sphinx_theme
