@@ -11,9 +11,9 @@ This module is a Python library for modeling, simulating and optimizing spiral m
 
    |version_badge|
 
-   **Author**: Hedi Romdhana  
+   **Author**: author  
 
-   **Email**: hedi.romdhana@agroparistech.fr
+   **Email**: email
 
 
 .. contents::

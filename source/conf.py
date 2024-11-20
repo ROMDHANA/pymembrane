@@ -87,4 +87,5 @@ rst_prolog = f"""
 .. |version_badge| image:: {version_badge_url}
    :alt: Version Badge
 """
-
+email = "hedi.romdhana@agroparistech.fr"
+author = "Hedi Romdhana"
