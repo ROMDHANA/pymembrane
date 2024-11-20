@@ -33,7 +33,7 @@ p {
 .custom-box {
     padding: 10px; /* Espace interne autour du contenu */
     margin: 10px; /* Espace externe autour du conteneur */
-    border: 1px solid #c0bfbf; /* Bordure discrète */
+    border: 1px solid #f3f0f0; /* Bordure discrète */
     border-radius: 4px; /* Coins arrondis */
     background-color: hwb(180 89% 11% / 0.788); /* Couleur de fond légère */
     font-family: Arial, sans-serif; /* Police moderne */
