@@ -82,10 +82,14 @@ def type_role(name, rawtext, text, lineno, inliner, options=None, content=None):
 roles.register_local_role('type', type_role)
 
 version_badge_url = f"https://img.shields.io/badge/version-{release}-blue.svg"
+email = "hedi.romdhana@agroparistech.fr"
+author = "Hedi Romdhana"
 
 rst_prolog = f"""
 .. |version_badge| image:: {version_badge_url}
    :alt: Version Badge
+
+.. |author| replace:: {author}
+.. |email| replace:: {email}
 """
-email = "hedi.romdhana@agroparistech.fr"
-author = "Hedi Romdhana"
+
